@@ -28,7 +28,7 @@ class Card:
     return self.suit + "+" + self.number
 
   def __str__(self):
-    return self.suit + "-" + self.number
+    return self.__repr__()
 
   def order(self):
     return self.suit + "-" + str(NUMBERS.index(self.number))
